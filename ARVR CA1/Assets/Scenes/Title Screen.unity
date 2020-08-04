@@ -185,7 +185,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &252509929
 GameObject:
@@ -746,7 +746,7 @@ PrefabInstance:
     - target: {fileID: 4024319866161970441, guid: 79e5676f05078d14da7602fd0558d1ad,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4024319866161970441, guid: 79e5676f05078d14da7602fd0558d1ad,
         type: 3}
@@ -818,10 +818,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Load Transition
       objectReference: {fileID: 0}
+    - target: {fileID: 4024319866161970934, guid: 79e5676f05078d14da7602fd0558d1ad,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 9196105285309059043, guid: 79e5676f05078d14da7602fd0558d1ad,
         type: 3}
       propertyPath: _delay
-      value: 0.5
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79e5676f05078d14da7602fd0558d1ad, type: 3}
