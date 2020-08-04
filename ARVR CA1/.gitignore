@@ -73,6 +73,9 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
+# QCAR folder generated during runtime
+/QCAR
+
 # Secret keys
 */[Ss]ecrets
 */[Ss]ecrets.meta
