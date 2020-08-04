@@ -775,6 +775,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2626818629677638991, guid: 79e5676f05078d14da7602fd0558d1ad,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Title Screen
+      objectReference: {fileID: 0}
     - target: {fileID: 4024319866161970441, guid: 79e5676f05078d14da7602fd0558d1ad,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -885,15 +890,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Load Transition
       objectReference: {fileID: 0}
-    - target: {fileID: 9196105285309059043, guid: 79e5676f05078d14da7602fd0558d1ad,
+    - target: {fileID: 4024319866161970934, guid: 79e5676f05078d14da7602fd0558d1ad,
         type: 3}
-      propertyPath: _defaultSceneToLoad
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 9196105285309059043, guid: 79e5676f05078d14da7602fd0558d1ad,
-        type: 3}
-      propertyPath: _delay
-      value: 1.5
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79e5676f05078d14da7602fd0558d1ad, type: 3}

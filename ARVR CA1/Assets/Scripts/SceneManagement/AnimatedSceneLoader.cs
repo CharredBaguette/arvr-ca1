@@ -17,12 +17,19 @@ namespace SceneManagement
         // The boolean parameter on the animator controller to set to true
         private const string BooleanTargetOnLoad = "end";
         private Animator _animator = null;
-        private bool _currentlyLoading = false;
-
+        private static bool _currentlyLoading = true;
 
         public void Awake()
         {
             _animator = GetComponent<Animator>();
+        }
+
+        private IEnumerator Start()
+        {
+            // Wait until animator transition stops playing
+            // Normalized time is 1 when clip reaches its end
+            yield return new WaitWhile(() => _animator.GetCurrentAnimatorStateInfo(0).normalizedTime <= 1);
+            _currentlyLoading = false;
         }
 
         public void LoadScene()
@@ -50,9 +57,9 @@ namespace SceneManagement
         // Load scene while playing transition animation
         private IEnumerator LoadSceneWithTransition(string targetScene, float delay)
         {
-            _animator.SetTrigger(BooleanTargetOnLoad);
+            _animator.SetBool(BooleanTargetOnLoad, true);
             yield return new WaitForSeconds(delay);
-            SceneManager.LoadScene(targetScene);
+            SceneManager.LoadSceneAsync(targetScene, LoadSceneMode.Single);
         }
     }
 };
