@@ -7,7 +7,7 @@ namespace SceneManagement
     [RequireComponent(typeof(Animator))]
     public class AnimatedSceneLoader : MonoBehaviour
     {
-        [SerializeField] private float _delay = 1.5f;
+        [SerializeField] private float _delay = 0.5f;
 
         [Header("Optional")]
         [Tooltip("The default scene to load when LoadScene() is called")]
