@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62b5d9ecd0a50f445bf49a7e7b104052, type: 3}
   m_Name: Tomato
   m_EditorClassIdentifier: 
-  _name: Tomato
+  _pluralName: Tomatoes
   _model: {fileID: 1004846731592950, guid: 631b072a88243ca4c99acaa4414cd28f, type: 3}
