@@ -12,58 +12,72 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 625e20e141a551a439926402e265247c, type: 3}
   m_Name: Pizza Recipe
   m_EditorClassIdentifier: 
-  RecipeName: Pizza Unos Deep Pan Chicago Style Pizza Recipe
+  _recipeName: Pizza Unos Deep Pan Chicago Style Pizza Recipe
   _ingredients: []
   _instructions: "Pour the warm water into a large mixing bowl and dissolve the yeast
     with a fork.\r\n\nAdd 1 cup of flour, all of the cornmeal, salt, and vegetable
     oil, and mix well with a spoon.\r\n\r\nContinue stirring in the rest of the flour
     1/2 cup at a time, until the dough comes away from the sides of the bowl.\r\n\r\nFlour
     your hands and the work surface and knead the ball of dough until it is no longer
-    sticky.\r\n\r\nLet the dough rise in an oiled bowl, sealed with plastic wrap,
-    for 45-60 minutes in a warm place, until it has doubled in size.\r\n\r\nPunch
-    it down and knead it briefly.\r\n\r\nPress it into an oiled 15-inch deep dish
-    pizza pan until it comes 2 inches up the sides and is even on the bottom of the
-    pan.\r\n\r\nLet the dough rise 15-20 minutes before filling.\r\n\r\nPreheat the
-    oven to 500\xB0F.\r\n\r\nWhile the dough is rising, prepare the filling.\r\n\r\nWhen
-    the dough has finished its second rising, lay the cheese over the dough shell.\r\nDistribute
-    the pepperoni and garlic over the cheese.\r\nTop with the tomato sauce.\r\n\r\nSprinkle
-    on the seasonings and Parmesan cheese.\r\n\r\nBake for 15 minutes at 500\xB0F,
-    then lower the temperature to 400\xB0F and finish baking for 25-35 minutes longer.\r\n\r\nLift
+    sticky.\r\n\nLet the dough rise in an oiled bowl, sealed with plastic wrap, for
+    45-60 minutes in a warm place, until it has doubled in size.\r\n\r\nPunch it
+    down and knead it briefly.\r\n\r\nPress it into an oiled 15-inch deep dish pizza
+    pan until it comes 2 inches up the sides and is even on the bottom of the pan.\r\n\r\nLet
+    the dough rise 15-20 minutes before filling.\r\n\r\nPreheat the oven to 500\xB0F.\r\n\r\nWhile
+    the dough is rising, prepare the filling.\r\n\r\nWhen the dough has finished
+    its second rising, lay the cheese over the dough shell.\r\nDistribute the pepperoni
+    and garlic over the cheese.\r\nTop with the tomato sauce.\r\n\r\nSprinkle on
+    the seasonings and Parmesan cheese.\r\n\r\nBake for 15 minutes at 500\xB0F, then
+    lower the temperature to 400\xB0F and finish baking for 25-35 minutes longer.\r\n\r\nLift
     up a section of the crust from time to time with a spatula to check its color.\r\n\r\nThe
     crust will be golden brown when done.\r\n\r\nServe immediately."
   _steps:
-  - _ingredients: []
+  - _ingredients:
+    - {fileID: 11400000, guid: f7e151a1ad90f5b4bbcc1031fb9584db, type: 2}
     _procedure: Pour the warm water into a large mixing bowl and dissolve the yeast
       with a fork.
   - _ingredients:
+    - {fileID: 11400000, guid: 105349875efbc5149b6c301897bd62aa, type: 2}
     - {fileID: 11400000, guid: 92897b566504a354296e9e97b3c4f7e7, type: 2}
     _procedure: Add 1 cup of flour, all of the cornmeal, salt, and vegetable oil,
       and mix well with a spoon.
-  - _ingredients: []
+  - _ingredients:
+    - {fileID: 11400000, guid: 105349875efbc5149b6c301897bd62aa, type: 2}
+    - {fileID: 11400000, guid: 017a9ff2046387445b3fb30054c8ecbf, type: 2}
+    - {fileID: 11400000, guid: f7e151a1ad90f5b4bbcc1031fb9584db, type: 2}
     _procedure: Continue stirring in the rest of the flour 1/2 cup at a time, until
       the dough comes away from the sides of the bowl.
-  - _ingredients: []
+  - _ingredients:
+    - {fileID: 11400000, guid: 105349875efbc5149b6c301897bd62aa, type: 2}
+    - {fileID: 11400000, guid: 017a9ff2046387445b3fb30054c8ecbf, type: 2}
     _procedure: Flour your hands and the work surface and knead the ball of dough
       until it is no longer sticky.
-  - _ingredients: []
+  - _ingredients:
+    - {fileID: 11400000, guid: 017a9ff2046387445b3fb30054c8ecbf, type: 2}
+    - {fileID: 11400000, guid: f7e151a1ad90f5b4bbcc1031fb9584db, type: 2}
     _procedure: Let the dough rise in an oiled bowl, sealed with plastic wrap, for
       45-60 minutes in a warm place, until it has doubled in size.
   - _ingredients: []
     _procedure: Punch it down and knead it briefly.
-  - _ingredients: []
+  - _ingredients:
+    - {fileID: 11400000, guid: b8040f0d34fb58f4e9dc4ab5b201b401, type: 2}
     _procedure: Press it into an oiled 15-inch deep dish pizza pan until it comes
       2 inches up the sides and is even on the bottom of the pan.
-  - _ingredients: []
+  - _ingredients:
+    - {fileID: 11400000, guid: 017a9ff2046387445b3fb30054c8ecbf, type: 2}
     _procedure: Let the dough rise 15-20 minutes before filling.
   - _ingredients: []
     _procedure: "Preheat the oven to 500\xB0F."
-  - _ingredients: []
+  - _ingredients:
+    - {fileID: 11400000, guid: 017a9ff2046387445b3fb30054c8ecbf, type: 2}
     _procedure: While the dough is rising, prepare the filling.
   - _ingredients:
+    - {fileID: 11400000, guid: 017a9ff2046387445b3fb30054c8ecbf, type: 2}
     - {fileID: 11400000, guid: d6100eb9b13802b41b12b417d5a5b700, type: 2}
     _procedure: When the dough has finished its second rising, lay the cheese over
       the dough shell.
   - _ingredients:
+    - {fileID: 11400000, guid: ad846564c5bd1874285f30bfd297d3ea, type: 2}
     - {fileID: 11400000, guid: d6100eb9b13802b41b12b417d5a5b700, type: 2}
     _procedure: Distribute the pepperoni and garlic over the cheese.
   - _ingredients: []
@@ -71,7 +85,8 @@ MonoBehaviour:
   - _ingredients:
     - {fileID: 11400000, guid: d6100eb9b13802b41b12b417d5a5b700, type: 2}
     _procedure: Sprinkle on the seasonings and Parmesan cheese.
-  - _ingredients: []
+  - _ingredients:
+    - {fileID: 11400000, guid: 78af1deb80e0b9f418b27538a47a692c, type: 2}
     _procedure: "Bake for 15 minutes at 500\xB0F, then lower the temperature to 400\xB0F
       and finish baking for 25-35 minutes longer."
   - _ingredients: []
