@@ -13,10 +13,12 @@ namespace Recipes
         [SerializeField] private List<string> _ingredients;
 
         // Text instructions for recipe
-        [Multiline(10)]
+        [Multiline(20)]
         [SerializeField] private string _instructions;
 
-        // TODO: Remove SerializeField attribute from _steps
+        [Header("Anything below here is serialized only for ease of debugging. These fields are generated whenever _instructions are changed.")]
+        [Header("[Debug]")]
+        // TODO: Remove SerializeField attribute from _steps?
         [SerializeField] private List<RecipeStep> _steps;
 
         private void OnValidate()
