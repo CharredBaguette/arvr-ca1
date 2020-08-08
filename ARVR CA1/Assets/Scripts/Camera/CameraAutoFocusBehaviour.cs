@@ -9,8 +9,6 @@ namespace Camera
 {
     public class CameraAutoFocusBehaviour : MonoBehaviour
     {
-        private CameraDevice _cameraDevice;
-
         private void Start()
         {
             var vuforia = VuforiaARController.Instance;
