@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54ca447204eeb0e45ae6b7f32cae7a1e, type: 3}
   m_Name: Ingredient Database
   m_EditorClassIdentifier: 
-  _ingredients: []
+  _ingredients:
+  - {fileID: 11400000, guid: d6100eb9b13802b41b12b417d5a5b700, type: 2}
+  - {fileID: 11400000, guid: 92897b566504a354296e9e97b3c4f7e7, type: 2}
+  - {fileID: 11400000, guid: b3f0e1faec2a05f4ab380af6a4ceb631, type: 2}
