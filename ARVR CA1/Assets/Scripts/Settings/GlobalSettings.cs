@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.Audio;
+
 [CreateAssetMenu(fileName = "Global Settings", menuName = "GlobalSettings")]
 public class GlobalSettings : ScriptableObject
 {
@@ -9,8 +10,9 @@ public class GlobalSettings : ScriptableObject
 
     private void OnEnable()
     {
-        // Assign from player prefs
-        _currentVolume = PlayerPrefs.GetFloat(_volumeParameter, 1.0f);
+        // Initialize master volume from playerprefs.
+        // Sets to default value of 1.0f if playerprefs not found.
+        SetMasterVolume(PlayerPrefs.GetFloat(_volumeParameter, 1.0f));
     }
 
     private void OnDisable()
@@ -27,10 +29,19 @@ public class GlobalSettings : ScriptableObject
     {
         // Clamp the volume to 0 and 1.0f
         volume = Mathf.Clamp01(volume);
-
         _currentVolume = volume;
-        // Set audio mixer master volume
-        _audioMixer.SetFloat(_volumeParameter, Mathf.Log10(volume) * 20);
+
+        // Mute audio if volume is 0
+        // Note: volume is interpolated between -80 to 0 to match audio mixer range
+        if (volume == 0)
+        {
+            _audioMixer.SetFloat(_volumeParameter, -80.0f);
+        }
+        else
+        {
+            // Set audio mixer master volume with logarithmic mapping
+            _audioMixer.SetFloat(_volumeParameter, Mathf.Log10(volume) * 20);
+        }
     }
 
     /// <summary>
