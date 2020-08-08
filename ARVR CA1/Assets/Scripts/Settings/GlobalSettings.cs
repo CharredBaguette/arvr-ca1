@@ -32,4 +32,12 @@ public class GlobalSettings : ScriptableObject
         // Set audio mixer master volume
         _audioMixer.SetFloat(_volumeParameter, Mathf.Log10(volume) * 20);
     }
+
+    /// <summary>
+    /// Quit application and resolve any callbacks
+    /// </summary>
+    public void QuitApplication()
+    {
+        Application.Quit();
+    }
 }
