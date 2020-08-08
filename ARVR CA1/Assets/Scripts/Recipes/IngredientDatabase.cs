@@ -17,7 +17,7 @@ namespace Recipes
 
 
         [Tooltip("List of all ingredients in the game")]
-        [SerializeField] private Ingredient[] _ingredients = new Ingredient[0];
+        [SerializeField] private Ingredient[] _ingredients;
 
         private Dictionary<string, Ingredient> _ingredientsDictionary = new Dictionary<string, Ingredient>();
         private Dictionary<Ingredient, string> _ingredientsReverseDictionary = new Dictionary<Ingredient, string>();
@@ -40,9 +40,11 @@ namespace Recipes
         private void OnValidate()
         {
             _ingredientsDictionary = new Dictionary<string, Ingredient>(_ingredients.Length);
+            _ingredientsReverseDictionary = new Dictionary<Ingredient, string>(_ingredients.Length);
 
             foreach (var ingredient in _ingredients)
             {
+                // Skip null ingredients
                 if (ingredient)
                 {
                     Add(ingredient);
