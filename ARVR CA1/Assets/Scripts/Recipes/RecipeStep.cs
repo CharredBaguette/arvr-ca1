@@ -45,7 +45,7 @@ namespace Recipes
             // Use regex to extract words in procedure by splitting 
             // string using a whitespace as delimeter and subsequently
             // trimming it.
-            var words = procedure.Split(new[] { ' ' },
+            var words = procedure.Split(new[] { ' ', ',',  '.'},
                 StringSplitOptions.RemoveEmptyEntries)
                 .Select(w => w.Trim())
                 .ToArray();
