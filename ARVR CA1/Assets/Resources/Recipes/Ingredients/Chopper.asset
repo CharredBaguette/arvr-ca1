@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Chopper
   m_EditorClassIdentifier: 
   _pluralName: Chop
-  _model: {fileID: 1756967995458954, guid: 733c9f99aae6b2a4387b2583f86820e3, type: 3}
+  _model: {fileID: 6511147161169269511, guid: d3066c45cac9a3344b55dd635f192a9c, type: 3}

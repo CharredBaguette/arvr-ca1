@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Bowl
   m_EditorClassIdentifier: 
   _pluralName: Bowl
-  _model: {fileID: 100000, guid: 3a45114cc17eb34449796839cf6f0a17, type: 3}
+  _model: {fileID: 387749670854463582, guid: 342e8e56e2bc1184c88ea8d1933015ab, type: 3}

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Knife
   m_EditorClassIdentifier: 
   _pluralName: Cut
-  _model: {fileID: 1804115603063742, guid: 2a79468e213672b4984d41d9f26ab16a, type: 3}
+  _model: {fileID: 3250406915475039356, guid: 44da9cd01b6d9054ba00f37bf99bc8f2, type: 3}
