@@ -45,14 +45,17 @@ MonoBehaviour:
       and mix well with a spoon.
   - _ingredients:
     - {fileID: 11400000, guid: 105349875efbc5149b6c301897bd62aa, type: 2}
+    - {fileID: 11400000, guid: 874e22783f4041747adff0a109d7d801, type: 2}
     - {fileID: 11400000, guid: f7e151a1ad90f5b4bbcc1031fb9584db, type: 2}
     _procedure: Continue stirring in the rest of the flour 1/2 cup at a time, until
       the dough comes away from the sides of the bowl.
   - _ingredients:
     - {fileID: 11400000, guid: 105349875efbc5149b6c301897bd62aa, type: 2}
+    - {fileID: 11400000, guid: 874e22783f4041747adff0a109d7d801, type: 2}
     _procedure: Flour your hands and the work surface and knead the ball of dough
       until it is no longer sticky.
   - _ingredients:
+    - {fileID: 11400000, guid: 874e22783f4041747adff0a109d7d801, type: 2}
     - {fileID: 11400000, guid: f7e151a1ad90f5b4bbcc1031fb9584db, type: 2}
     _procedure: Let the dough rise in an oiled bowl, sealed with plastic wrap, for
       45-60 minutes in a warm place, until it has doubled in size.
@@ -62,13 +65,16 @@ MonoBehaviour:
     - {fileID: 11400000, guid: b8040f0d34fb58f4e9dc4ab5b201b401, type: 2}
     _procedure: Press it into an oiled 15-inch deep dish pizza pan until it comes
       2 inches up the sides and is even on the bottom of the pan.
-  - _ingredients: []
+  - _ingredients:
+    - {fileID: 11400000, guid: 874e22783f4041747adff0a109d7d801, type: 2}
     _procedure: Let the dough rise 15-20 minutes before filling.
   - _ingredients: []
     _procedure: "Preheat the oven to 500\xB0F."
-  - _ingredients: []
+  - _ingredients:
+    - {fileID: 11400000, guid: 874e22783f4041747adff0a109d7d801, type: 2}
     _procedure: While the dough is rising, prepare the filling.
   - _ingredients:
+    - {fileID: 11400000, guid: 874e22783f4041747adff0a109d7d801, type: 2}
     - {fileID: 11400000, guid: d6100eb9b13802b41b12b417d5a5b700, type: 2}
     _procedure: When the dough has finished its second rising, lay the cheese over
       the dough shell.
