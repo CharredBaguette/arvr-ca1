@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using TMPro;
 
 namespace Recipes.Display
@@ -17,6 +19,12 @@ namespace Recipes.Display
         private Dictionary<Ingredient, GameObject> _modelPool = new Dictionary<Ingredient, GameObject>();
         private int _procedureIndex = 0;
 
+        [Serializable]
+        public class OnRecipeChangedUnityEvent : UnityEvent<Recipe> { }
+
+        [Header("Events")]
+        public OnRecipeChangedUnityEvent OnRecipeChanged = null;
+
         private void Start()
         {
             SetRecipe(_recipe);
@@ -28,6 +36,11 @@ namespace Recipes.Display
         public void SetRecipe(Recipe recipe)
         {
             _recipe = recipe;
+
+            if (OnRecipeChanged != null)
+            {
+                OnRecipeChanged.Invoke(recipe);
+            }
 
             // Clear recipe if recipe is null
             if (!_recipe)
