@@ -260,6 +260,8 @@ GameObject:
   - component: {fileID: 4112541454810008199}
   - component: {fileID: 4112541454810008197}
   - component: {fileID: 4112541454810008198}
+  - component: {fileID: 3907629333361148547}
+  - component: {fileID: 8044953172818382042}
   m_Layer: 0
   m_Name: Recipe List Panel
   m_TagString: Untagged
@@ -325,6 +327,35 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3907629333361148547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4112541454810008192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17133303e9146c744827ba51372bb367, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnDataLoaded:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8044953172818382042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4112541454810008192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1da4b4a0bfa19a845a51a42ff92e97ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  webRequest: {fileID: 3907629333361148547}
+  contentManager: {fileID: 6798724652436150354}
 --- !u!1 &4541603371267182328
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,6 +403,7 @@ GameObject:
   - component: {fileID: 267080300086377359}
   - component: {fileID: 4368673371502043943}
   - component: {fileID: 3418818958377045950}
+  - component: {fileID: 6798724652436150354}
   m_Layer: 0
   m_Name: Content
   m_TagString: Untagged
@@ -437,6 +469,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!114 &6798724652436150354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5957129785438788888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c162725a6040a1d408a709b78d569724, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _listElementPrefab: {fileID: 7091063136822950543, guid: 3c913ab30c2bee04da49019265a2a2f2,
+    type: 3}
 --- !u!1 &6549002178360891129
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,7 +779,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: RECIPES
+  m_text: RECIPE RECOMMENDATIONS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -761,7 +807,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 35.8
+  m_fontSize: 34.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -802,10 +848,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 6379709911405266561}
-    characterCount: 7
+    characterCount: 22
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
+    spaceCount: 1
+    wordCount: 2
     linkCount: 0
     lineCount: 1
     pageCount: 1
