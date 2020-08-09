@@ -193,7 +193,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1972042556}
+  - {fileID: 1595242833}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -214,6 +214,34 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!21 &283875647
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'projector.Bottom_scaledMaterial
+
+    16052'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: dcfafb91090048a0bacb071eea679dd7, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &401144484
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,7 +637,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1247993619}
+  - {fileID: 810890233}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -791,16 +819,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &771491568
+--- !u!21 &743600918
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'projector.Front_scaledMaterial
+  m_Name: 'projector.Top_scaledMaterial
 
-    16606'
+    16052'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -813,7 +841,35 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 33f91ab04a4f4c6eb109463026f353ba, type: 3}
+        m_Texture: {fileID: 2800000, guid: e523b63873054781aacbda14789d35c3, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+--- !u!21 &810890233
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'projector.Back_scaledMaterial
+
+    16052'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: a3c8b1b69c794d3e9a630c78a45b7231, type: 3}
         m_Scale: {x: -1, y: -1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -1026,7 +1082,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 771491568}
+  - {fileID: 1984303398}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1210,6 +1266,34 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!21 &1215334679
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'projector.Right_scaledMaterial
+
+    16052'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: a894f0e328e64e84b8773051c66dc721, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &1229676509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1282,7 +1366,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1247924282}
+  - {fileID: 1215334679}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1335,62 +1419,6 @@ Transform:
   m_Father: {fileID: 739506321}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1247924282
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'projector.Right_scaledMaterial
-
-    16606'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: a894f0e328e64e84b8773051c66dc721, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
---- !u!21 &1247993619
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'projector.Back_scaledMaterial
-
-    16606'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: a3c8b1b69c794d3e9a630c78a45b7231, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &1428380580
 GameObject:
   m_ObjectHideFlags: 0
@@ -1463,7 +1491,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1480973643}
+  - {fileID: 743600918}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1484,34 +1512,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!21 &1480973643
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'projector.Top_scaledMaterial
-
-    16606'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: e523b63873054781aacbda14789d35c3, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &1502739936
 GameObject:
   m_ObjectHideFlags: 0
@@ -1806,6 +1806,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79e5676f05078d14da7602fd0558d1ad, type: 3}
+--- !u!21 &1595242833
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'projector.Left_scaledMaterial
+
+    16052'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 5551f744ac374125933eb2d8bc2b9f7e, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1001 &1617032639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2018,7 +2046,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1990478552}
+  - {fileID: 283875647}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2345,16 +2373,16 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1542258400419363883}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &1972042556
+--- !u!21 &1984303398
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'projector.Left_scaledMaterial
+  m_Name: 'projector.Front_scaledMaterial
 
-    16606'
+    16052'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -2367,35 +2395,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 5551f744ac374125933eb2d8bc2b9f7e, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
---- !u!21 &1990478552
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'projector.Bottom_scaledMaterial
-
-    16606'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: dcfafb91090048a0bacb071eea679dd7, type: 3}
+        m_Texture: {fileID: 2800000, guid: 33f91ab04a4f4c6eb109463026f353ba, type: 3}
         m_Scale: {x: -1, y: -1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
