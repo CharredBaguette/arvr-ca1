@@ -7,7 +7,8 @@ namespace Recipes.Display
     public class ProcedureDisplay : MonoBehaviour
     {
         [Header("Dependencies")]
-        [SerializeField] private TMP_Text _text;
+        [SerializeField] private TMP_Text _procedureText;
+        [SerializeField] private TMP_Text _recipeNameText;
         [SerializeField] private ModelArranger _modelArranger;
         [SerializeField] private IngredientDatabase _ingredientDatabase;
         [SerializeField] private IReadOnlyList<RecipeStep> _steps;
@@ -34,6 +35,8 @@ namespace Recipes.Display
                 ClearRecipe();
                 return;
             }
+
+            _recipeNameText.text = _recipe.RecipeName;
 
             // Cache steps in recipe
             _steps = _recipe.Steps;
@@ -98,7 +101,7 @@ namespace Recipes.Display
         private void SetProcedure(int procedureIndex)
         {
             var step = _steps[procedureIndex];
-            _text.text = step.Procedure;
+            _procedureText.text = step.Procedure;
 
             HideIngredients();
             ToggleIngredients(step.Ingredients, true);
@@ -160,6 +163,7 @@ namespace Recipes.Display
         public void ClearRecipe()
         {
             _recipe = null;
+            _procedureIndex = 0;
 
             // Destory all models from model pool
             foreach (var model in _modelPool.Values)
