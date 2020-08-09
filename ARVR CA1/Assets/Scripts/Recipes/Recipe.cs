@@ -9,17 +9,24 @@ namespace Recipes
     public class Recipe : ScriptableObject
     {
         [SerializeField] private string _recipeName;
+        public string RecipeName => _recipeName;
+
+        [SerializeField] private IngredientDatabase _ingredientDatabase;
+
         // List of ingredients needed in the recipe
         [SerializeField] private List<string> _ingredients;
+        public IReadOnlyList<string> Ingredients => _ingredients;
 
         // Text instructions for recipe
         [Multiline(20)]
         [SerializeField] private string _instructions;
+        public string Instructions => _instructions;
 
         [Header("Anything below here is serialized only for ease of debugging. These fields are generated whenever _instructions are changed.")]
         [Header("[Debug]")]
         // TODO: Remove SerializeField attribute from _steps?
         [SerializeField] private List<RecipeStep> _steps;
+        public IReadOnlyList<RecipeStep> Steps => _steps;
 
         private void OnValidate()
         {
@@ -42,7 +49,7 @@ namespace Recipes
             // new step from each procedure
             foreach (var paragraph in paragraphs)
             {
-                steps.Add(new RecipeStep(paragraph));
+                steps.Add(new RecipeStep(paragraph, _ingredientDatabase));
             }
 
             return steps;

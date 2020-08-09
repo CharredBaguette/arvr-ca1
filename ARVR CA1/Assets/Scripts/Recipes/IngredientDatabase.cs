@@ -13,8 +13,6 @@ namespace Recipes
         /// Singleton instance of IngredientDatabase.
         /// </summary>
         /// <value></value>
-        public static IngredientDatabase Instance { get; private set; }
-
 
         [Tooltip("List of all ingredients in the game")]
         [SerializeField] private Ingredient[] _ingredients;
@@ -23,19 +21,6 @@ namespace Recipes
         private Dictionary<Ingredient, string> _ingredientsReverseDictionary = new Dictionary<Ingredient, string>();
 
         public int Count { get => _ingredientsDictionary.Count; }
-
-        private void OnEnable()
-        {
-            // Destroy if there is already an instance of IngredientDatabase
-            if (Instance)
-            {
-                Debug.LogError($"Creating more than one instance of {typeof(IngredientDatabase)} is not allowed!");
-                DestroyImmediate(this);
-            }
-
-            // Assign this as singleton
-            Instance = this;
-        }
 
         private void OnValidate()
         {
