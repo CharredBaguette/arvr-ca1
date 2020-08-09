@@ -22,7 +22,22 @@ namespace Recipes
 
         public int Count { get => _ingredientsDictionary.Count; }
 
+        // Events
+        public delegate void DatabaseLoadHandler();
+        public event DatabaseLoadHandler OnDatabaseLoaded = null;
+
         private void OnValidate()
+        {
+            Load();
+
+        }
+
+        private void OnEnable()
+        {
+            Load();
+        }
+
+        private void Load()
         {
             _ingredientsDictionary = new Dictionary<string, Ingredient>(_ingredients.Length);
             _ingredientsReverseDictionary = new Dictionary<Ingredient, string>(_ingredients.Length);
@@ -35,6 +50,8 @@ namespace Recipes
                     Add(ingredient);
                 }
             }
+
+            OnDatabaseLoaded?.Invoke();
         }
 
         /// <summary>

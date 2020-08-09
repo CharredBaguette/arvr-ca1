@@ -30,11 +30,25 @@ namespace Recipes
 
         private void OnValidate()
         {
-            _steps = ToRecipeSteps(_instructions);
+            _steps = ToRecipeSteps(_instructions, _ingredientDatabase);
         }
-        
-        public List<RecipeStep> ToRecipeSteps(string instructions)
-        //public List<RecipeStep> ToRecipeStep(string instructions)
+
+        private void OnEnable()
+        {
+            _ingredientDatabase.OnDatabaseLoaded += OnIngredientDatabaseLoaded;
+        }
+
+        private void OnDisable()
+        {
+            _ingredientDatabase.OnDatabaseLoaded -= OnIngredientDatabaseLoaded;
+        }
+
+        private void OnIngredientDatabaseLoaded()
+        {
+            ToRecipeSteps(_instructions, _ingredientDatabase);
+        }
+
+        public List<RecipeStep> ToRecipeSteps(string instructions, IngredientDatabase ingredientDatabase)
         {
             // Split instructions into paragraphs using regex
             // Note: we use line breaks as delimeters which requires
@@ -49,7 +63,7 @@ namespace Recipes
             // new step from each procedure
             foreach (var paragraph in paragraphs)
             {
-                steps.Add(new RecipeStep(paragraph, _ingredientDatabase));
+                steps.Add(new RecipeStep(paragraph, ingredientDatabase));
             }
 
             return steps;
