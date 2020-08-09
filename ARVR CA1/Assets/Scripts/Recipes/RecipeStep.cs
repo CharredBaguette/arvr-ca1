@@ -27,12 +27,12 @@ namespace Recipes
         public string Procedure => _procedure;
 
         // Constructor
-        public RecipeStep(string procedure)
+        public RecipeStep(string procedure, IngredientDatabase ingredientDatabase)
         {
             _procedure = procedure;
 
             // initialize ingredients present in the procedure
-            _ingredients = ExtractIngredientsFromText(procedure);
+            _ingredients = ExtractIngredientsFromText(procedure, ingredientDatabase);
         }
 
         /// <summary>
@@ -40,7 +40,7 @@ namespace Recipes
         /// and create an ingredient list.
         /// Note: This function is costly with O(2n^2) complexity (I think LOL)
         /// </summary>
-        private static Ingredient[] ExtractIngredientsFromText(string procedure)
+        private static Ingredient[] ExtractIngredientsFromText(string procedure, IngredientDatabase ingredientDatabase)
         {
             // Use regex to extract words in procedure by splitting 
             // string using a whitespace as delimeter and subsequently
@@ -49,9 +49,6 @@ namespace Recipes
                 StringSplitOptions.RemoveEmptyEntries)
                 .Select(w => w.Trim())
                 .ToArray();
-
-            // Cache ingredient database instance
-            var ingredientDatabase = IngredientDatabase.Instance;
 
             var foundIngredients = new HashSet<Ingredient>();
 
